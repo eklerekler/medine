@@ -1,0 +1,526 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: orange;
+}
+a:hover {
+  color: #ecd544;
+}
+
+header {
+  position: fixed;
+  padding: 5px 0;
+  background-color: #212529;
+  width: 100%;
+  z-index: 2;
+}
+header .imgbox {
+  width: 150px;
+  height: 20px;
+}
+header .imgbox img {
+  cursor: pointer;
+}
+header nav a {
+  font-size: 20px;
+  color: #aeaeb0;
+  margin-right: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  header {
+    width: 90%;
+    position: fixed;
+  }
+  header nav a {
+    display: none;
+  }
+}
+@media screen and (max-width: 300px) {
+  header {
+    position: fixed;
+    width: 47%;
+    height: 70px;
+  }
+  header .imgbox {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+  }
+}
+
+#welcome {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 140vh;
+}
+#welcome .textbox {
+  text-align: center;
+  color: white;
+}
+#welcome .textbox .btn {
+  margin-top: 30px;
+  color: white;
+  font-size: 25px;
+  padding: 15px 35px;
+  background-color: #ffc800;
+  font-weight: 700;
+}
+#welcome .textbox h3 {
+  margin-top: 150px;
+  padding: 170px 0 35px;
+  font-size: 35px;
+  font-weight: 400;
+}
+#welcome .textbox h4 {
+  margin-bottom: 40px;
+  font-size: 75px;
+  font-weight: 800;
+}
+@media screen and (max-width: 455px) {
+  #welcome {
+    height: 90vh;
+  }
+  #welcome .textbox h3 {
+    padding: 95px 0 25px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  #welcome .textbox h4 {
+    font-size: 68px;
+  }
+  #welcome .textbox .btn {
+    color: white;
+    font-size: 20px;
+    padding: 20px 45px;
+    background-color: #ffc800;
+  }
+}
+
+#services {
+  padding: 40px 0 60px;
+}
+#services .textbox {
+  text-align: center;
+}
+#services .textbox h2 {
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+#services .textbox h4 {
+  color: #6a6a6a;
+  padding-bottom: 45px;
+  font-size: 20px;
+  line-height: 1.3;
+}
+#services .icon {
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffc800;
+  padding: 28px 26px;
+  width: 120px;
+  height: 120px;
+  font-size: 55px;
+  color: white;
+}
+#services .iconone {
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffc800;
+  padding: 29px 26px;
+  width: 120px;
+  height: 120px;
+  font-size: 55px;
+  color: white;
+}
+#services .icontwo {
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffc800;
+  padding: 29px 36px;
+  width: 120px;
+  height: 120px;
+  font-size: 55px;
+  color: white;
+}
+#services .textbox h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+#services .textbox h6 {
+  font-size: 20px;
+  color: #6a6a6a;
+  line-height: 1.4;
+}
+@media screen and (max-width: 602px) {
+  #services .textbox h4 {
+    padding-bottom: 40px;
+  }
+  #services .textbox h6 {
+    padding-bottom: 25px;
+  }
+}
+
+#portfolio {
+  padding: 40px 0 60px;
+  background-color: #f6f6f6;
+}
+#portfolio .textboox {
+  text-align: center;
+}
+#portfolio .textboox h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+#portfolio .textboox h3 {
+  padding: 25px 0 50px;
+  line-height: 1.3;
+  color: #6a6a6a;
+  font-size: 20px;
+}
+#portfolio .textbox {
+  background-color: white;
+  text-align: center;
+  margin: 0 0 18px 1px;
+}
+#portfolio .textbox h2 {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 25px 0 15px;
+}
+#portfolio .textbox h4 {
+  color: #6a6a6a;
+  font-size: 20px;
+  line-height: 1.3;
+  padding-bottom: 25px;
+}
+#portfolio .imgbox {
+  color: #dc9223;
+}
+#portfolio .imgbox img {
+  width: 358px;
+  height: 256px;
+}
+#portfolio .icon i {
+  color: white;
+  position: absolute;
+  width: 28%;
+  height: 44%;
+  padding-left: 155px;
+  padding-top: 95px;
+  font-size: 55px;
+  font-weight: 700;
+  opacity: 0;
+}
+#portfolio .icon i:hover {
+  opacity: 0.8;
+  background-color: #e4c31c;
+}
+@media screen and (max-width: 768px) {
+  #portfolio .imgbox {
+    padding-right: 70px;
+  }
+  #portfolio .imgbox img {
+    width: 250px;
+    height: 200px;
+  }
+  #portfolio .textbox {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+#about {
+  padding-bottom: 50px;
+}
+#about .box, #about .books {
+  padding: 10px 0 55px;
+}
+#about .box h1, #about .books h1 {
+  font-size: 45px;
+  padding: 45px 0 15px;
+  font-weight: 700;
+}
+#about .box h5, #about .books h5 {
+  color: #969696;
+  font-size: 20px;
+}
+#about .box h2, #about .books h2 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin: 0 110px;
+}
+#about .box h3, #about .books h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin: 0 110px;
+}
+#about .box h5, #about .books h5 {
+  font-size: 19px;
+  color: #969696;
+  line-height: 1.8;
+  margin: 0 110px;
+}
+#about .box h6, #about .books h6 {
+  font-size: 19px;
+  color: #969696;
+  line-height: 1.5;
+  margin: 0 110px;
+}
+#about .bottomline {
+  border-style: solid;
+  height: 300px;
+  border-right-color: #d40404;
+  border-right-width: 2px;
+}
+#about .imgbox {
+  position: absolute;
+  left: 43%;
+  width: 170px;
+  height: 170px;
+  border: 7px solid #e9ecef;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#about .demone .boxfive {
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  position: relative;
+  left: 88%;
+  padding-top: 30px;
+  width: 170px;
+  height: 170px;
+  border: 7px solid #e9ecef;
+  border-radius: 50%;
+  background-color: #ffc800;
+}
+#about .demone h4 {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 5px 48px;
+}
+@media (max-width: 299px) {
+  #about .demone .boxfive {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 200px) and (max-width: 768px) {
+  #about .box h2, #about .box h3, #about .box h5, #about .box h6 {
+    margin: 0 20px 0 110px;
+  }
+  #about .box .imgbox {
+    left: 0;
+    width: 90px;
+    height: 90px;
+    border: 7px solid #e9ecef;
+  }
+  #about .box .textabout h2, #about .box .textabout h3, #about .box .textabout h6 {
+    text-align: start;
+  }
+  #about .demone .boxfive {
+    left: 0;
+    padding-top: 30px;
+    width: 90px;
+    height: 90px;
+    margin-left: 15px;
+    border: 7px solid #e9ecef;
+  }
+  #about .demone h1, #about .demone h2, #about .demone h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    bottom: 45%;
+    right: 35%;
+  }
+}
+
+#team {
+  padding: 15px 0;
+  background-color: #f8f9fa;
+}
+#team .textbox {
+  text-align: center;
+}
+#team .textbox h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 80px;
+}
+#team .textbox h4 {
+  color: #6a6a6a;
+  font-size: 20px;
+  padding: 20px 0;
+}
+#team .textbox h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 25px 0 10px;
+}
+#team .textbox h5 {
+  color: #6a6a6a;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+#team .textbox h6 {
+  font-size: 25px;
+  color: #6a6a6a;
+  padding: 40px 0 20px;
+}
+#team .imgbox img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 8px solid #dfe0e1;
+}
+#team ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#team ul li {
+  font-size: 20px;
+  background-color: #1d1735;
+  color: white;
+  border: 12px solid #1d1735;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  #team .imgbox {
+    margin-top: 60px;
+  }
+}
+
+#facebook .one {
+  width: 190px;
+  height: 200px;
+  padding: 75px 0;
+}
+#facebook .two {
+  width: 130px;
+  height: 150px;
+  padding: 75px 0;
+}
+#facebook .three {
+  width: 160px;
+  height: 190px;
+  padding: 75px 0;
+}
+#facebook .four {
+  width: 120px;
+  height: 140px;
+  padding: 75px 0;
+}
+
+#website {
+  padding: 10px 0;
+}
+#website .textbox h4 {
+  padding-top: 10px;
+}
+#website .textbox h3 {
+  padding: 0 15px 0 0;
+  display: inline-block;
+  margin-top: 30px;
+}
+#website ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#website ul li {
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #1d1735;
+  color: white;
+  border: 12px solid #1d1735;
+  border-radius: 30%;
+  margin: 0 10px;
+}
+#website ul li i {
+  cursor: pointer;
+}
+@media screen and (max-width: 751px) {
+  #website .textbox {
+    display: flex;
+    justify-content: center;
+  }
+}
+#website .icon ul li {
+  margin-top: 20px;
+  border-radius: 30px;
+}
+#website .textbox h4 {
+  margin-top: 15px;
+}
+
+#contact {
+  padding: 65px 0;
+  background-color: #212529;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+}
+#contact .textbox {
+  text-align: center;
+}
+#contact .textbox h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  padding: 65px 0 20px;
+}
+#contact .textbox h3 {
+  color: #757575;
+  padding-bottom: 35px;
+}
+#contact .box {
+  padding-bottom: 35px;
+}
+#contact .box .add input {
+  color: rgba(0, 0, 0, 0.1764705882);
+  font-size: 18px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 0 25px;
+  font-weight: 700;
+}
+#contact .demo input {
+  font-size: 20px;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.1764705882);
+  font-weight: 700;
+  padding: 18px;
+  padding-bottom: 195px;
+}
+#contact .box .btn {
+  opacity: 0.5;
+  padding: 20px 55px;
+  background-color: #c19e1d;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media screen and (max-width: 999px) {
+  #contact {
+    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+  }
+  #contact .box .btn {
+    margin: 56px 45px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
